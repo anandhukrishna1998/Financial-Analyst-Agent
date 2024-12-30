@@ -118,13 +118,7 @@ if st.sidebar.button("Search Latest Tech News"):
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
-# Progress Bar Example for Long Requests
-st.sidebar.header("Progress Example")
-if st.sidebar.button("Show Progress"):
-    progress_bar = st.progress(0)
-    for percent in range(100):
-        time.sleep(0.01)
-        progress_bar.progress(percent + 1)
+
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("Powered by Phi AI Agents")
